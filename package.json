@@ -1,0 +1,21 @@
+{
+  "name": "fullstack-query-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:fe": "cd client && npm run dev",
+    "dev:be": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:fe\" \"npm run dev:be\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
